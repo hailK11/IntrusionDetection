@@ -43,7 +43,7 @@ def result_binary():
     if request.method == 'POST':
         to_predict_list = request.form.to_dict()
         to_predict_list=list(to_predict_list.values())
-        result = ValuePredictorMulti(to_predict_list)
+        result = ValuePredictorBinary(to_predict_list)
         if int(result)==1:
             prediction='Its an attack!'
         else:
@@ -55,7 +55,7 @@ def result_multi():
     if request.method == 'POST':
         to_predict_list = request.form.to_dict()
         to_predict_list=list(to_predict_list.values())
-        result = ValuePredictorBinary(to_predict_list)
+        result = ValuePredictorMulti(to_predict_list)
         result = int(result)
         print(result)
         if result==0:
