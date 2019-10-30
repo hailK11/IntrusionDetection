@@ -1,0 +1,190 @@
+<html>
+<body>
+    <h3>Binary Class</h3>
+
+<div>
+  <form action="/result_binary" method="POST">
+  <table>
+    <tr>
+    <td>
+    <label for="swin">Src TCP window advertisement value</label>
+    </td>
+    <td>
+    <input type="text" id="swin" name="swin">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="dwin">Dest TCP window advertisement value</label>
+    </td>
+    <td>
+    <input type="text" id="dwin" name="dwin">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="sttl">Src to Dest Time to Live value</label>
+    </td>
+    <td>
+    <input type="text" id="sttl" name="sttl">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_dst_sport_ltm">No of connections of the same destination address (3) and the source port (2) in 100 connections according to the last time (26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_dst_sport_ltm" name="ct_dst_sport_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_src_dport_ltm">No of connections of the same source address (1) and the destination port (4) in 100 connections according to the last time (26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_src_dport_ltm" name="ct_src_dport_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="dload">Dest bits per second</label>
+    </td>
+    <td>
+    <input type="text" id="dload" name="dload">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="dtcpb">Dest TCP base sequence number</label>
+    </td>
+    <td>
+    <input type="text" id="dtcpb" name="dtcpb">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="stcpb">Src TCP base sequence number</label>
+    </td>
+    <td>
+    <input type="text" id="stcpb" name="stcpb">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="rate">Rate</label>
+    </td>
+    <td>
+    <input type="text" id="rate" name="rate">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_dst_src_ltm">No of connections of the same source (1) and the destination (3) address in in 100 connections according to the last time (26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_dst_src_ltm" name="ct_dst_src_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <input type="submit" value="Submit">
+    </td>
+    </tr>
+  </table>
+  </form>
+</div>
+
+    <h3>Multi Class</h3>
+
+<div>
+  <form action="/result_multi" method="POST">
+  <table>
+    <tr>
+    <td>
+    <label for="ct_dst_sport_ltm">No of connections of the same destination address (3) and the source port (2) in 100 connections according to the last time (26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_dst_sport_ltm" name="ct_dst_sport_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="swin">Src TCP window advertisement value</label>
+    </td>
+    <td>
+    <input type="text" id="swin" name="swin">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="dwin">Dest TCP window advertisement value</label>
+    </td>
+    <td>
+    <input type="text" id="dwin" name="dwin">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_src_dport_ltm">No of connections of the same source address (1) and the destination port (4) in 100 connections according to the last time (26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_src_dport_ltm" name="ct_src_dport_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_dst_src_ltm">No of connections of the same source (1) and the destination (3) address in in 100 connections according to the last time (26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_dst_src_ltm" name="ct_dst_src_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="dttl">Dest to Src Time to Live value</label>
+    </td>
+    <td>
+    <input type="text" id="dttl" name="dttl">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_srv_dst">No of connections that contain the same service(14) and destination address(3) in 100 connections according to the last time(26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_srv_dst" name="ct_srv_dst">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_srv_src">No of connections that contain the same service(14) and source address(1) in 100 connections according to the last time(26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_srv_src" name="ct_srv_src">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="ct_dst_ltm">No of connections of the same destination address(3) in 100 connections according to the last time(26)</label>
+    </td>
+    <td>
+    <input type="text" id="ct_dst_ltm" name="ct_dst_ltm">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="stcpb">Src TCP base sequence number</label>
+    </td>
+    <td>
+    <input type="text" id="stcpb" name="stcpb">
+    </td>
+    <tr>
+    <td>
+    <input type="submit" value="Submit">
+    </td>
+    </tr>
+  </table>
+  </form>
+</div>
+</body>
+</html>
