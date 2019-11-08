@@ -33,7 +33,7 @@ def ValuePredictorMulti(to_predict_list):
     to_predict_df = pd.DataFrame([to_predict_list])
     to_predict_scaled = scaler.transform(to_predict_df)
     print(to_predict_scaled)
-    to_predict = pd.DataFrame(to_predict_scaled)
+    to_predict = pd.DataFrame(to_predict_df)
     knnmodel = pickle.load(open("knnmodelmulti.pkl","rb"))
     result = knnmodel.predict(to_predict)
     return result[0]
